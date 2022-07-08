@@ -8,17 +8,17 @@
   margin-left: 80px;
 }
 
-.contentContainer {
+.container {
   width: 800px;
   margin: 0 auto;
 }
 
-.listContainer {
+.list {
   list-style: none;
   padding: 0;
 }
 
-.list {
+.list > li {
   min-height: 80px;
   margin: 40px 0;
   padding: 24px 40px;
