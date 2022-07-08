@@ -5,7 +5,10 @@ const fetchEsTitle = async () => {
   const json = await res.json()
   for (let i = 0; i < json.length; i++) {
     const es = document.createElement('li')
-    es.addEventListener('click', () => console.log(es))
+    es.addEventListener('click', () => {
+      sessionStorage.setItem('id', json[i].id)
+      location.pathname = '/test.html'
+    })
     es.textContent = json[i].title
     list.appendChild(es)
   }
