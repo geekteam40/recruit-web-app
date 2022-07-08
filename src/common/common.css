@@ -19,7 +19,7 @@ header {
   background-color: silver;
 }
 
-.header-title {
+header > div {
   margin-left: 40px;
   font-size: 1.2rem;
 }
@@ -32,4 +32,9 @@ nav {
 nav > a {
   color: black;
   margin: 0 32px;
+}
+
+main {
+  max-width: 800px;
+  margin: 120px auto;
 }
