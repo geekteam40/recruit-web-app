@@ -7,7 +7,7 @@ const fetchEsTitle = async () => {
     const es = document.createElement('li')
     es.addEventListener('click', () => {
       sessionStorage.setItem('id', json[i].id)
-      location.pathname = '/test.html'
+      location.pathname = '/detail.html'
     })
     es.textContent = json[i].title
     list.appendChild(es)
