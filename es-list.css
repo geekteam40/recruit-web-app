@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.title {
+  margin-left: 80px;
+}
+
+.contentContainer {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.listContainer {
+  list-style: none;
+  padding: 0;
+}
+
+.list {
+  min-height: 80px;
+  margin: 40px 0;
+  padding: 24px 40px;
+  border: solid 1px black;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+.button {
+  display: block;
+  width: 800px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button:hover {
+  border: solid 1px black;
+}
