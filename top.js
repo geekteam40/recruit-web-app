@@ -15,3 +15,32 @@ const fetchEsTitle = async () => {
 }
 
 fetchEsTitle()
+
+// // json形式データ
+// [
+//   {
+//     id: fi2ojru0923rw39,
+//     title: '学生時代に力を入れたこと',
+//     contents: [
+//       {
+//         limit: 300,
+//         body: '私が学生時代に力を入れたことは〜。',
+//       },
+//       {
+//         limit: 400,
+//         body: '私が学生時代に力を入れたことは〜。',
+//       },
+//     ],
+//   },
+//   {
+//     //　contentsが１つの場合
+//     id: woijr2r203oiw,
+//     title: '就活軸',
+//     contents: [
+//       {
+//         limit: 200,
+//         body: '私の就活軸は〜。',
+//       },
+//     ],
+//   }
+// ]
