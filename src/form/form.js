@@ -27,14 +27,12 @@ const createEs = async () => {
     secret: !sec.checked,
     text: tx.value,
   }
-  console.log(values)
   const userId = getUserId()
   await fetch('', {
     method: 'POST',
     headers: {
       accept: 'applecation/json',
       'Content-Type': 'applecation/json',
-      // Authorization: userId,
     },
     body: JSON.stringify(values),
   })
