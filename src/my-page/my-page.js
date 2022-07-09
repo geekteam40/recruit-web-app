@@ -14,4 +14,8 @@ const fetchEsTitle = async () => {
   }
 }
 
+const toForm = () => {
+  location.pathname = '/form.html'
+}
+
 fetchEsTitle()
