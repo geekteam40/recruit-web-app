@@ -4,9 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="src/login/login.css">
+    <script src="src/login/login.js"></script>
+    <title>ログインフォーム</title>
   </head>
   <body>
-    <div>login</div>
+    <div class="login">
+      <div class="login_form_top">
+        <h1>ログイン</h1>
+        <p>メールアドレス、パスワードをご入力の上、「ログイン」をクリックしてください。</p>
+      </div>
+      <div class="login_form_btm">
+        <input type="id" id="address" placeholder="メールアドレス">
+        <input type="password" id="password" placeholder="パスワード">
+        <input type="submit" id="submit" value="ログイン">
+      </div>
+      <a href="register.html">新規登録の方</a>
+    </div>
   </body>
 </html>

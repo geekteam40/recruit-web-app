@@ -2,7 +2,7 @@ body {
     background-color: silver;
   }
   
-  .login {
+  form {
     width: 400px;
     padding: 40px 10px;
     position: absolute;
@@ -13,16 +13,16 @@ body {
     text-align: center;
   }
   
-  .login h1,.login p {
+  form h1,form p {
     color: black;
     font-weight: 700;
   }
   
-  .login p {
+  form p {
     font-size: 10px;
   }
   
-  .login input[type = "id"],.login input[type = "password"] {
+  form input[type = "id"],form input[type = "password"] {
     border: 0;
     background: none;
     display: block;
@@ -36,12 +36,12 @@ body {
     text-align: center;
   }
   
-  .login input[type = "id"]:focus,.login input[type = "password"]:focus {
+  form input[type = "id"]:focus,form input[type = "password"]:focus {
     width: 280px;
     background-color: #f0f8ff;
   }
   
-  .login input[type = "submit"]{
+  form input[type = "submit"]{
     border: 0;
     background: none;
     display: block;
@@ -57,7 +57,7 @@ body {
     cursor: pointer;
   }
   
-  .login input[type = "submit"]:hover {
+  form input[type = "submit"]:hover {
     background-color: silver;
     border: 2px solid black;
   }
