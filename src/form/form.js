@@ -16,16 +16,15 @@ const createEs = async () => {
     secret: !sec.checked,
     text: tx.value,
   }
-  console.log(values)
-  // await fetch('', {
-  //   method: 'POST',
-  //   headers: {
-  //     accept: 'applecation/json',
-  //     'Content-Type': 'applecation/json',
-  //   },
-  //   body: JSON.stringify(values),
-  // })
-  // location.pathname = '/my-page.html'
+  await fetch('', {
+    method: 'POST',
+    headers: {
+      accept: 'applecation/json',
+      'Content-Type': 'applecation/json',
+    },
+    body: JSON.stringify(values),
+  })
+  location.pathname = '/my-page.html'
 }
 
 btn.onclick = createEs
