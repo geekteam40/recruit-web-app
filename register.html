@@ -4,20 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/initional/register.css">
-    <script src="src/initional/register.js"></script>
-    <title>ログインフォーム</title>
+    <link rel="stylesheet" href="src/register/register.css" />
+    <script src="src/register/register.js" defer></script>
+    <title>新規登録フォーム</title>
   </head>
   <body>
     <form name="login_form">
       <div class="login_form_top">
         <h1>新規登録</h1>
-        <p>メールアドレス、パスワードをご入力の上、「新規登録」をクリックしてください。</p>
+        <p>
+          メールアドレス、パスワードをご入力の上、「新規登録」をクリックしてください。
+        </p>
       </div>
       <div class="login_form_btm">
-        <input type="id" name="adoress" placeholder="メールアドレス">
-        <input type="password" name="password" placeholder="パスワード">
-        <input type="submit" name="botton" value="新規登録">
+        <input type="id" id="address" placeholder="メールアドレス" />
+        <input type="password" id="password" placeholder="パスワード" />
+        <input
+          type="submit"
+          id="submit"
+          onclick="createId()"
+          value="新規登録"
+        />
       </div>
       <a href="index.html">既に登録済みの方</a>
     </form>
