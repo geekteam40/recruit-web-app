@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/form/form.css" />
+    <script src="src/form/form.js" defer></script>
+  </head>
+  <body>
+    <h1>ES作成</h1>
+    <input type="text" class="title" id="title" />
+    <select id="length">
+      <option value="200">200</option>
+      <option value="300">300</option>
+      <option value="400">400</option>
+      <option value="500">500</option>
+    </select>
+    <label for="secret" class="secret-area">
+      <div>
+        <input type="checkbox" id="secret" />
+        <div class="secret-circle"></div>
+        <div class="secret-base"></div>
+      </div>
+      <div class="secret-label" id="secret-label">非公開</div>
+    </label>
+    <textarea id="text"></textarea>
+    <button id="button">作成</button>
+  </body>
+</html>
