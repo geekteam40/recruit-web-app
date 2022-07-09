@@ -12,7 +12,7 @@ sec.addEventListener('click', () => {
 const getUserId = () => {
   const cookies = document.cookie
   const cookiesArray = cookies.split(';')
-  for (let i = 0; i < cookiesArray; i++) {
+  for (let i = 0; i < cookiesArray.length; i++) {
     const array = i.split('=')
     if (array[0] == 'userId') {
       return array[1]
@@ -21,13 +21,13 @@ const getUserId = () => {
 }
 
 const createEs = async () => {
+  const userId = getUserId()
   const values = {
     type: ttl.value,
     length: len.value,
     secret: !sec.checked,
     text: tx.value,
   }
-  const userId = getUserId()
   await fetch('', {
     method: 'POST',
     headers: {
