@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="src/common/common.css" />
-    <link rel="stylesheet" href="src/public/public.css" />
-    <script src="src/public/public.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <div>recruit-web-app</div>
-      <nav>
-        <a href="/my-page.html">ES管理</a>
-        <a href="/public.html">みんなのES</a>
-      </nav>
-    </header>
-    <main>
-      <h1>みんなのES</h1>
-      <select id="search-select">
-        <option value="" selected disabled>絞り込み検索</option>
-        <option value="gakutika">学生時代に力を入れたこと</option>
-        <option value="zikopr">自己PR</option>
-        <option value="tuyomi">自分の強み</option>
-        <option value="new" id="new-type">その他(入力する)</option>
-      </select>
-      <input type="text" class="search-form" id="search-form">
-      <button id="search-button">検索</button>
-      <ul id="list">
-        <!-- 仮データ -->
-        <li>
-          <div id="list-title">学生時代に力を入れたこと</div>
-          <div id="list-content">
-            社会学のゼミで取り組んだ農村都市のPR活動のリーダーとしての仕事です。コロナ禍によりゼミ生との接点が少なくなりチームとしてやる気を無くしていました。そこで1週間に1度オンライン会議をおこない、PR活動の話だけではなく、個人の1週間の出来事を1分間で話す時間を設けました。結果以前よりもゼミ生同士の会話が増え、PR活動の取り組みもスムーズに進めることができました。
-          </div>
-          <div id="list-length">200 words</div>
-        </li>
-        <li>
-          <div id="list-title">学生時代に力を入れたこと</div>
-          <div id="list-content">
-            研究です。私は形あるものを作ることに意義を感じ研究に取り組みました。研究で自分の予想に反した結果が得られ、研究が計画より3ヶ月遅れる課題が発生しました。まずその原因を考えたところ、自分の知識不足からリスク管理が甘く、PDCAサイクルの遅延が生じていることがわかりました。そこで私は本課題を解決するため研究室の同期4人と共同で研究を行いました。本取り組みが、(1)綿密にリスク管理された研究計画の作成と(2)相互の学力向上につながり3ヶ月分の遅延を解消しました。この経験から、周りを巻き込むことで自己の成長と課題解決が行えることを実感しました。そこで今後の研究や仕事は他者を巻き込みながら課題を解決していきます。
-            <div id="list-length">300 words</div>
-          </div>
-        </li>
-        <li>
-          <div id="list-title">自己PR</div>
-          <div id="list-content">
-            所属しているテニスサークルの会長として、大学のテニスサークル20団体が競う対抗戦で優勝を目指しました。わたしが所属するサークルは、過去最高の成績が準優勝だったので、歴代最高の成績を目指したいため「優勝」を目標に掲げました。優勝に向け、自チームの課題は何かを考えた結果、サークル全体での実力を底上げしなくてはいけないという点に気付きました。対抗戦は、団体戦のため最低でも10名以上の部員が出場する必要があり、上級性の力だけでは総合成績で負け越してしまうかもない状況でした。そこで、「上級生が下級生を指導するメンター制度」「シングルス・ダブルスそれぞれに特化した練習」という点を講じました。それぞれ、下級生の実力向上を目指し限られた時間内で対抗戦に直結する練習に注力しました。結果、対抗戦で優勝を達成することができ、組織をまとめる難しさややりがい、適切な対応策を講じる大切さを学びました。
-            <div class="list-length" id="list-length">400 words</div>
-          </li>
-      </ul>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>みんなのES</title>
+  <link rel="stylesheet" href="src/common/common.css" />
+  <link rel="stylesheet" href="src/public/public.css" />
+  <script src="src/public/public.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-logo">EShare</div>
+    <nav class="header-list">
+      <a href="/my-page.html">ES管理</a>
+      <a href="/public.html">みんなのES</a>
+    </nav>
+  </header>
+  <main>
+    <h1>みんなのES</h1>
+    <select class="search" id="search-select">
+      <option value="" selected disabled>絞り込み検索</option>
+      <option value="gakutika">学生時代に力を入れたこと</option>
+      <option value="zikopr">自己PR</option>
+      <option value="tuyomi">自分の強み</option>
+      <option value="new" id="new-type">その他(入力する)</option>
+    </select>
+    <input type="text" class="search-form" id="search-form">
+    <button id="search-button">検索</button>
+    <ul id="list">
+      <!-- 仮データ -->
+      <li>
+        <div class="title" id="list-title">＜学生時代に力を入れたこと＞</div>
+        <div class="length" id="list-length">200 words</div>
+        <div class="text" id="list-content">
+          社会学のゼミで取り組んだ農村都市のPR活動のリーダーとしての仕事です。コロナ禍によりゼミ生との接点が少なくなりチームとしてやる気を無くしていました。そこで1週間に1度オンライン会議をおこない、PR活動の話だけではなく、個人の1週間の出来事を1分間で話す時間を設けました。結果以前よりもゼミ生同士の会話が増え、PR活動の取り組みもスムーズに進めることができました。
+        </div>
+      </li>
+      <li>
+        <div class="title" id="list-title">＜学生時代に力を入れたこと＞</div>
+        <div class="length" id="list-length">300 words</div>
+        <div class="text" id="list-content">
+          研究です。私は形あるものを作ることに意義を感じ研究に取り組みました。研究で自分の予想に反した結果が得られ、研究が計画より3ヶ月遅れる課題が発生しました。まずその原因を考えたところ、自分の知識不足からリスク管理が甘く、PDCAサイクルの遅延が生じていることがわかりました。そこで私は本課題を解決するため研究室の同期4人と共同で研究を行いました。本取り組みが、(1)綿密にリスク管理された研究計画の作成と(2)相互の学力向上につながり3ヶ月分の遅延を解消しました。この経験から、周りを巻き込むことで自己の成長と課題解決が行えることを実感しました。そこで今後の研究や仕事は他者を巻き込みながら課題を解決していきます。
+          <div id="list-length">300 words</div>
+        </div>
+      </li>
+      <li>
+        <div class="title" id="list-title">＜自己PR＞</div>
+        <div class="length" id="list-length">400 words</div>
+        <div class="text" id="list-content">
+          所属しているテニスサークルの会長として、大学のテニスサークル20団体が競う対抗戦で優勝を目指しました。わたしが所属するサークルは、過去最高の成績が準優勝だったので、歴代最高の成績を目指したいため「優勝」を目標に掲げました。優勝に向け、自チームの課題は何かを考えた結果、サークル全体での実力を底上げしなくてはいけないという点に気付きました。対抗戦は、団体戦のため最低でも10名以上の部員が出場する必要があり、上級性の力だけでは総合成績で負け越してしまうかもない状況でした。そこで、「上級生が下級生を指導するメンター制度」「シングルス・ダブルスそれぞれに特化した練習」という点を講じました。それぞれ、下級生の実力向上を目指し限られた時間内で対抗戦に直結する練習に注力しました。結果、対抗戦で優勝を達成することができ、組織をまとめる難しさややりがい、適切な対応策を講じる大切さを学びました。
+      </li>
+    </ul>
+  </main>
+</body>
+
 </html>

@@ -1,3 +1,45 @@
+main {
+  padding-left: 50px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 22px;
+}
+
 .search-form {
   display: none;
+}
+
+.search {
+  border: 0;
+  background: none;
+  margin-left: 20px;
+  border: 2px solid black;
+  padding: 15px 10px;
+  width: 220px;
+  outline: none;
+  transition: 0.25s;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+  margin: 10px;
+
+}
+
+.title {
+  color: black;
+}
+
+.length {
+  color: black;
+  margin: 5px;
+}
+
+.text {
+  color: black;
+  margin-bottom: 40px;
 }
