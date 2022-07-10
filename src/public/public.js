@@ -1,5 +1,6 @@
 const list = document.getElementById('list')
 const select = document.getElementById('search-select')
+const form = document.getElementById('search-form')
 const button = document.getElementById('search-button')
 
 // 全ての公開データを表示
@@ -40,7 +41,7 @@ fetchData()
 // 検索
 const searchButton = async () => {
   const type = select.value
-  const searchKeyWord = ''
+  const searchKeyWord = form.value
   const res = await fetch(
     `http://localhost:8000/search?type=${type}&keyword=${searchKeyWord}`,
     {
@@ -71,3 +72,13 @@ const searchButton = async () => {
 }
 
 button.onclick = searchButton
+
+// newのとき、入力フォームを表示
+const showForm = () => {
+  if (select.value === 'new') {
+    select.style.display = 'none'
+    form.style.display = 'inline'
+  }
+}
+
+select.onchange = showForm
