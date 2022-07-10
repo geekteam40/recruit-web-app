@@ -20,6 +20,7 @@ const fetchData = async () => {
   const json = await res.json()
   for (let i = 0; i < json.length; i++) {
     const es = document.createElement('li')
+    es.classList.add('list-container')
     const esTitle = document.createElement('div')
     esTitle.classList.add('list-title')
     esTitle.textContent = json[i].title
@@ -40,6 +41,8 @@ fetchData()
 
 // 検索
 const searchButton = async () => {
+  const listContainer = document.querySelector('.list-container')
+  listContainer.remove()
   const type = select.value
   const searchKeyWord = form.value
   const res = await fetch(
@@ -55,6 +58,7 @@ const searchButton = async () => {
   const json = await res.json()
   for (let i = 0; i < json.length; i++) {
     const es = document.createElement('li')
+    es.classList.add('list-container')
     const esTitle = document.createElement('div')
     esTitle.classList.add('list-title')
     esTitle.textContent = json[i].title

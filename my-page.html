@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/common/common.css" />
+    <link rel="stylesheet" href="src/my-page/my-page.css" />
+    <script src="src/my-page/my-page.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="src/common/common.css" />
-  <link rel="stylesheet" href="src/my-page/my-page.css" />
-  <script src="src/my-page/my-page.js" defer></script>
-</head>
-
-<body>
-  <header>
-    <div>EShare</div>
-    <nav>
-      <a href="/my-page.html">ES管理</a>
-      <a href="/public.html">みんなのES</a>
-    </nav>
-  </header>
-  <main>
-    <h1 class="title">ES一覧</h1>
-    <ul class="list" id="list">
-      <li>学生時代に力を入れたこと</li>
-      <li>自己PR</li>
-      <li>自身の強み</li>
-    </ul>
-    <button class="button" onclick="toForm()">作成</button>
-  </main>
-</body>
-
+  <body>
+    <header>
+      <div>EShare</div>
+      <nav>
+        <a href="/my-page.html">ES管理</a>
+        <a href="/public.html">みんなのES</a>
+      </nav>
+    </header>
+    <main>
+      <h1 class="title">ES一覧</h1>
+      <ul class="list" id="list"></ul>
+      <button class="button" onclick="toForm()">作成</button>
+    </main>
+  </body>
 </html>

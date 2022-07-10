@@ -6,7 +6,7 @@ const getUserId = () => {
   const cookies = document.cookie
   const cookiesArray = cookies.split(';')
   for (let i = 0; i < cookiesArray.length; i++) {
-    const array = i.split('=')
+    const array = cookiesArray[i].split('=')
     if (array[0] == 'userId') {
       return array[1]
     }
