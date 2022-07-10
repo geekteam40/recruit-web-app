@@ -31,7 +31,8 @@ const fetchData = async () => {
       for (let j = 0; j < smallData.length; j++) {
         const es = document.createElement('li')
         es.addEventListener('click', () => {
-          // sessionStorage.setItem
+          sessionStorage.setItem('title', largeData[i].title)
+          sessionStorage.setItem('length', smallData[j].length)
           location.pathname = '/form.html'
         })
         const esLabel = document.createElement('div')
