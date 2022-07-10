@@ -1,3 +1,5 @@
+const list = document.getElementById('list')
+
 const toForm = () => {
   location.pathname = '/form.html'
 }
