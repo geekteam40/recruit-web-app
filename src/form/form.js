@@ -33,6 +33,7 @@ const displayData = async () => {
       },
     })
     const json = await res.json()
+    // sessionStorageの'title'と'length'をもとに表示するデータを探索
     const largeData = json.largeData
     const title = sessionStorage.getItem('title')
     for (let i = 0; i < largeData.length; i++) {
@@ -80,6 +81,7 @@ const createEs = async () => {
       if (largeData[k].type === ttl.value) {
         const smallData = largeData[k].smallData
         for (let j = 0; j < smallData.length; j++) {
+          // lengthが同じデータが存在する場合
           if (smallData[j].length === len.value) {
             smallData.splice(j, 1)
           }
