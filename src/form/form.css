@@ -1,3 +1,33 @@
+main {
+  padding-left: 50px;
+}
+
+.title {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px;
+  border: 2px solid black;
+  padding: 15px 10px;
+  width: 220px;
+  outline: none;
+  transition: 0.25s;
+  text-align: center;
+}
+
+.length {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px;
+  border: 2px solid black;
+  padding: 15px 10px;
+  width: 220px;
+  outline: none;
+  transition: 0.25s;
+  text-align: center;
+}
+
 .secret-area {
   display: flex;
   align-items: center;
@@ -10,12 +40,12 @@
   height: 0;
 }
 
-.secret:checked ~ .secret-circle {
+.secret:checked~.secret-circle {
   transform: translateX(100%);
   background-color: blue;
 }
 
-.secret:checked ~ .secret-base {
+.secret:checked~.secret-base {
   background-color: rgb(219, 234, 254);
 }
 
@@ -40,4 +70,13 @@
 
 .secret-label {
   margin-left: 8px;
+}
+
+textarea {
+  margin-top: 10px;
+  border: 2px solid black;
+  min-width: 400px;
+  min-height: 600px;
+  height: 800px;
+  width: 600px;
 }
