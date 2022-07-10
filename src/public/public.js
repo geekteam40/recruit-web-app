@@ -3,6 +3,8 @@ const select = document.getElementById('search-select')
 const form = document.getElementById('search-form')
 const button = document.getElementById('search-button')
 
+let count = 0
+
 // 全ての公開データを表示
 const fetchData = async () => {
   const type = ''
@@ -34,6 +36,7 @@ const fetchData = async () => {
     esLength.textContent = json[i].length
     es.appendChild(esLength)
     list.appendChild(es)
+    count += 1
   }
 }
 
@@ -41,8 +44,11 @@ fetchData()
 
 // 検索
 const searchButton = async () => {
-  const listContainer = document.querySelector('.list-container')
-  listContainer.remove()
+  for (i = 0; i < count; i++) {
+    const listContainer = document.querySelector('.list-container')
+    listContainer.remove()
+  }
+  count = 0
   const type = select.value
   const searchKeyWord = form.value
   const res = await fetch(
@@ -72,6 +78,7 @@ const searchButton = async () => {
     esLength.textContent = json[i].length
     es.appendChild(esLength)
     list.appendChild(es)
+    count += 1
   }
 }
 
