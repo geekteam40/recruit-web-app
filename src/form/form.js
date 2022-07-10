@@ -1,4 +1,5 @@
 const ttl = document.getElementById('title')
+const ttlForm = document.getElementById('title-form')
 const len = document.getElementById('length')
 const sec = document.getElementById('secret')
 const tx = document.getElementById('text')
@@ -94,9 +95,31 @@ const createEs = async () => {
       }
     }
   } else {
+    const largeDataTitle = ''
+    switch (ttl.value) {
+      case 'gakutika': {
+        largeDataTitle = '学生時代に力を入れたこと'
+        break
+      }
+      case 'zikopr': {
+        largeDataTitle = '自己PR'
+        break
+      }
+      case 'tuyomi': {
+        largeDataTitle = '自信の強み'
+        break
+      }
+      case 'new': {
+        largeDataTitle = ttlForm.value
+        break
+      }
+      default:
+        break
+    }
     // typeが存在しない場合、largeDataに新規で追加
     largeData.push({
       type: ttl.value,
+      title: largeDataTitle,
       smallData: [
         {
           length: len.value,
@@ -119,3 +142,12 @@ const createEs = async () => {
 }
 
 btn.onclick = createEs
+
+const showForm = () => {
+  if (ttl.value === 'new') {
+    ttl.style.display = 'none'
+    ttlForm.style.display = 'block'
+  }
+}
+
+ttl.onchange = showForm

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+<<<<<<< HEAD
 
 <head>
   <meta charset="UTF-8" />
@@ -58,3 +59,42 @@
 </body>
 
 </html>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/common/common.css" />
+    <link rel="stylesheet" href="src/public/public.css" />
+    <script src="src/public/public.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>EShare</div>
+      <nav>
+        <a href="/my-page.html">ES管理</a>
+        <a href="/public.html">みんなのES</a>
+      </nav>
+    </header>
+    <main>
+      <h1>みんなのES</h1>
+      <select id="search-select">
+        <option value="" selected disabled>絞り込み検索</option>
+        <option value="gakutika">学生時代に力を入れたこと</option>
+        <option value="zikopr">自己PR</option>
+        <option value="tuyomi">自分の強み</option>
+        <option value="new" id="new-type">その他(入力する)</option>
+      </select>
+      <input
+        type="text"
+        class="search-form"
+        id="search-form"
+        placeholder="検索"
+      />
+      <button id="search-button">検索</button>
+      <ul id="list"></ul>
+    </main>
+  </body>
+</html>
+>>>>>>> 7ad7e9cee20d029ddbebe60bea39b639fb3fe87e
