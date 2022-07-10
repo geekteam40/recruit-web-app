@@ -52,12 +52,12 @@ main {
   height: 0;
 }
 
-.secret:checked ~ .secret-circle {
+.secret:checked~.secret-circle {
   transform: translateX(100%);
   background-color: blue;
 }
 
-.secret:checked ~ .secret-base {
+.secret:checked~.secret-base {
   background-color: rgb(219, 234, 254);
 }
 
@@ -85,10 +85,9 @@ main {
 }
 
 textarea {
+  font-size: 18px;
   margin-top: 10px;
   border: 2px solid black;
-  min-width: 400px;
-  min-height: 600px;
-  height: 800px;
+  height: 400px;
   width: 600px;
 }
