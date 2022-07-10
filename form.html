@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="src/common/common.css" />
-    <link rel="stylesheet" href="src/form/form.css" />
-    <script src="src/form/form.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <div>recruit-web-app</div>
-      <nav>
-        <a href="/my-page.html">ES管理</a>
-        <a href="/public.html">みんなのES</a>
-      </nav>
-    </header>
-    <main>
-      <h1>ES作成</h1>
-      <select class="title" id="title">
-        <option value="" selected disabled>選択してください</option>
-        <option value="gakutika">学生時代に力を入れたこと</option>
-        <option value="zikopr">自己PR</option>
-        <option value="tuyomi">自分の強み</option>
-      </select>
-      <select id="length">
-        <option value="" selected disabled>選択してください</option>
-        <option value="200">200</option>
-        <option value="300">300</option>
-        <option value="400">400</option>
-        <option value="500">500</option>
-      </select>
-      <label for="secret" class="secret-area">
-        <input type="checkbox" class="secret" id="secret" />
-        <div class="secret-circle"></div>
-        <div class="secret-base"></div>
-        <div class="secret-label" id="secret-label">非公開</div>
-      </label>
-      <textarea id="text"></textarea>
-      <button id="button">作成</button>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ES作成</title>
+  <link rel="stylesheet" href="src/common/common.css" />
+  <link rel="stylesheet" href="src/form/form.css" />
+  <script src="src/form/form.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div>recruit-web-app</div>
+    <nav>
+      <a href="/my-page.html">ES管理</a>
+      <a href="/public.html">みんなのES</a>
+    </nav>
+  </header>
+  <main>
+    <h1>ES作成</h1>
+    <select class="title" id="title">
+      <option value="" selected disabled>選択してください</option>
+      <option value="gakutika">学生時代に力を入れたこと</option>
+      <option value="zikopr">自己PR</option>
+      <option value="tuyomi">自分の強み</option>
+    </select>
+    <select class="length" id="length">
+      <option value="" selected disabled>選択してください</option>
+      <option value="200">200</option>
+      <option value="300">300</option>
+      <option value="400">400</option>
+      <option value="500">500</option>
+    </select>
+    <label for="secret" class="secret-area">
+      <input type="checkbox" class="secret" id="secret" />
+      <div class="secret-circle"></div>
+      <div class="secret-base"></div>
+      <div class="secret-label" id="secret-label">非公開</div>
+    </label>
+    <textarea id="text"></textarea>
+    <button id="button">作成</button>
+  </main>
+</body>
+
 </html>
