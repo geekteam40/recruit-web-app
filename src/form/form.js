@@ -95,7 +95,7 @@ const createEs = async () => {
       }
     }
   } else {
-    const largeDataTitle = ''
+    let largeDataTitle = ''
     switch (ttl.value) {
       case 'gakutika': {
         largeDataTitle = '学生時代に力を入れたこと'
@@ -130,7 +130,7 @@ const createEs = async () => {
     })
   }
   // 更新したデータをpatchで送信
-  await fetch(`http://localhost:8000/memo?userId=${useId}`, {
+  await fetch(`http://localhost:8000/memo?userId=${userId}`, {
     method: 'PATCH',
     mode: 'cors',
     headers: {
